@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gamagama-rmu"
+version = "0.1.0"
+description = "Rolemaster Unified plugin for gamagama-cli."
+requires-python = ">=3.9"
+dependencies = ["gamagama-core"]
+
+[project.entry-points."gamagama.systems"]
+rmu = "gamagama.rmu.system:RMUSystem"
+
+[project.optional-dependencies]
+test = ["pytest", "gamagama-core"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
