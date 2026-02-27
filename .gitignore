@@ -206,3 +206,9 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 .aider*
+
+# Rulebook processing: PDFs and intermediate build artifacts
+# Only chapters/*.md and (eventually) tables/*.json are committed
+rulebooks/**/*.pdf
+rulebooks/*/*.md
+rulebooks/*/*.json
