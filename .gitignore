@@ -212,3 +212,7 @@ __marimo__/
 rulebooks/**/*.pdf
 rulebooks/*/*.md
 rulebooks/*/*.json
+
+# Claude Code — installed by gamagama-common/install.sh
+.claude/commands/
+/CLAUDE.md
